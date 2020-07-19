@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "NicoVideoMediaSession",
+    "version": "1.0.0",
+    "author": "takusan_23",
+    "description": "ニコ動でMediaSessionAPIを利用できるようにします。これでWindowsのロック画面などからニコ動の操作ができるようになります",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.nicovideo.jp/watch/*"
+            ],
+            "js": [
+                "media.js"
+            ]
+        }
+    ]
+}
